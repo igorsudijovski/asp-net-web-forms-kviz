@@ -78,6 +78,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -129,6 +130,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -164,6 +166,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -213,6 +216,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -240,6 +244,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {

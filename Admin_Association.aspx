@@ -80,7 +80,26 @@
         </div>
     </div>
     <div style="float:left; clear:both; width:100%">
+        <div class="txt-a5"><span>Одговор:</span><asp:TextBox ID="txtA5" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" 
+            ControlToValidate="txtA5" ErrorMessage="*" Font-Bold="True" ForeColor="Red" ValidationGroup="validation1"></asp:RequiredFieldValidator></div>
+        <div class="txt-b5">
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" 
+            ControlToValidate="txtB5" ErrorMessage="*" Font-Bold="True" ForeColor="Red" ValidationGroup="validation1"></asp:RequiredFieldValidator><span>Одговор:</span><asp:TextBox CssClass="" ID="txtB5" runat="server"></asp:TextBox>
+        </div>
+    </div>
+    <div style="float:left; clear:both; width:100%">
         <asp:TextBox CssClass="txt-final" ID="txtFinal" runat="server"></asp:TextBox>
+    </div>
+        <div style="float:left; clear:both; width:100%">
+        <div class="txt-a5"><span>Одговор:</span><asp:TextBox ID="txtC5" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" 
+            ControlToValidate="txtC5" ErrorMessage="*" Font-Bold="True" ForeColor="Red" ValidationGroup="validation1"></asp:RequiredFieldValidator>
+        </div>
+        <div class="txt-b5">
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" 
+            ControlToValidate="txtD5" ErrorMessage="*" Font-Bold="True" ForeColor="Red" ValidationGroup="validation1"></asp:RequiredFieldValidator><span>Одговор:</span><asp:TextBox CssClass="" ID="txtD5" runat="server"></asp:TextBox>
+        </div>
     </div>
     <div style="float:left; clear:both; width:100%">
         <div class="txt-a4"><span>C1:</span><asp:TextBox ID="txtC1" runat="server"></asp:TextBox>

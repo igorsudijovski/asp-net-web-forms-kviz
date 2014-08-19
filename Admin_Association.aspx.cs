@@ -53,6 +53,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -80,6 +81,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -128,6 +130,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -179,6 +182,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -228,6 +232,7 @@ public partial class _Default : System.Web.UI.Page
         catch (Exception ex)
         {
             error.Text = ex.Message;
+            error.Visible = true;
         }
         finally
         {
@@ -237,22 +242,22 @@ public partial class _Default : System.Web.UI.Page
 
     private String getAllA()
     {
-        return txtA1.Text + ":??:" + txtA2.Text + ":??:" + txtA3.Text + ":??:" + txtA4.Text + ":??:";
+        return txtA1.Text + ":??:" + txtA2.Text + ":??:" + txtA3.Text + ":??:" + txtA4.Text + ":??:" + txtA5.Text;
     }
 
     private String getAllB()
     {
-        return txtB1.Text + ":??:" + txtB2.Text + ":??:" + txtB3.Text + ":??:" + txtB4.Text + ":??:";
+        return txtB1.Text + ":??:" + txtB2.Text + ":??:" + txtB3.Text + ":??:" + txtB4.Text + ":??:" + txtB5.Text;
     }
 
     private String getAllC()
     {
-        return txtC1.Text + ":??:" + txtC2.Text + ":??:" + txtC3.Text + ":??:" + txtC4.Text + ":??:";
+        return txtC1.Text + ":??:" + txtC2.Text + ":??:" + txtC3.Text + ":??:" + txtC4.Text + ":??:" + txtC5.Text;
     }
 
     private String getAllD()
     {
-        return txtD1.Text + ":??:" + txtD2.Text + ":??:" + txtD3.Text + ":??:" + txtD4.Text + ":??:";
+        return txtD1.Text + ":??:" + txtD2.Text + ":??:" + txtD3.Text + ":??:" + txtD4.Text + ":??:" + txtD5.Text;
     }
 
     private void setAllA(String asocString)
@@ -263,6 +268,7 @@ public partial class _Default : System.Web.UI.Page
         txtA2.Text = asoc[1];
         txtA3.Text = asoc[2];
         txtA4.Text = asoc[3];
+        txtA5.Text = asoc[4];
     }
 
     private void setAllB(String asocString)
@@ -273,6 +279,7 @@ public partial class _Default : System.Web.UI.Page
         txtB2.Text = asoc[1];
         txtB3.Text = asoc[2];
         txtB4.Text = asoc[3];
+        txtB5.Text = asoc[4];
     }
 
     private void setAllC(String asocString)
@@ -283,6 +290,7 @@ public partial class _Default : System.Web.UI.Page
         txtC2.Text = asoc[1];
         txtC3.Text = asoc[2];
         txtC4.Text = asoc[3];
+        txtC5.Text = asoc[4];
     }
 
     private void setAllD(String asocString)
@@ -293,6 +301,7 @@ public partial class _Default : System.Web.UI.Page
         txtD2.Text = asoc[1];
         txtD3.Text = asoc[2];
         txtD4.Text = asoc[3];
+        txtD5.Text = asoc[4];
     }
 
     private void clearAllAsoc()
@@ -301,18 +310,22 @@ public partial class _Default : System.Web.UI.Page
         txtA2.Text = "";
         txtA3.Text = "";
         txtA4.Text = "";
+        txtA5.Text = "";
         txtB1.Text = "";
         txtB2.Text = "";
         txtB3.Text = "";
         txtB4.Text = "";
+        txtB5.Text = "";
         txtC1.Text = "";
         txtC2.Text = "";
         txtC3.Text = "";
         txtC4.Text = "";
+        txtC5.Text = "";
         txtD1.Text = "";
         txtD2.Text = "";
         txtD3.Text = "";
         txtD4.Text = "";
+        txtD5.Text = "";
         txtFinal.Text = "";
     }
 }
