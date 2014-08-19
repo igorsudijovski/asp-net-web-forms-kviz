@@ -11,11 +11,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="background-position: right top; height: 180px; background-image: url('/kviz tedi/img/main image.jpg'); background-repeat: repeat-x;">
+    <div style="background-position: right top; height: 180px; background-image: url('img/main image.jpg'); background-repeat: repeat-x;">
         <asp:ContentPlaceHolder ID="mainLinks" runat="server">
         </asp:ContentPlaceHolder>
-        <asp:Label ID="Label1" runat="server" CssClass="title" Font-Bold="True" 
-            Text="Слагалица"></asp:Label>
     </div>
     <asp:ContentPlaceHolder ID="mainContent" runat="server">
     </asp:ContentPlaceHolder>
