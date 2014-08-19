@@ -1,0 +1,92 @@
+﻿body 
+{
+    margin: auto
+}
+
+.main-links
+{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    float:right;
+    margin-right: 20px;
+    background-color: rgba(255,255,255,0.6);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.3);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.logedUser
+{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    float:right;
+    clear:both;
+    margin-right: 20px;
+    background-color: White;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+.log-out-button
+{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    clear: both;
+}
+    
+.main-links:hover 
+{
+    text-decoration: underline;
+    cursor: pointer;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.8);
+}
+.text-bold 
+{
+    font-weight: bold;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.95);
+}
+.text-bold:hover
+{
+    font-weight: bold;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.95);
+}
+.main-image 
+{
+    float:left;
+}
+.margin-right 
+{
+    margin-right: 15px;
+}
+.login-button 
+{
+    margin-left:200px;
+}
+.margin-left 
+{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.title 
+{
+    display:block;
+    padding-top: 10px;
+    padding-left: 100px;
+    font-size: 100px;
+}
+.error-messages
+{
+    margin-right: 15px;
+}
