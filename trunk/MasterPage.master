@@ -5,16 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="~/css/main.css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
+    <div style="background-position: right top; height: 180px; background-image: url('/kviz tedi/img/main image.jpg'); background-repeat: repeat-x;">
+        <asp:ContentPlaceHolder ID="mainLinks" runat="server">
         </asp:ContentPlaceHolder>
+        <asp:Label ID="Label1" runat="server" CssClass="title" Font-Bold="True" 
+            Text="Слагалица"></asp:Label>
     </div>
+    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+    </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>
