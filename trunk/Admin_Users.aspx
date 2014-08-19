@@ -9,7 +9,7 @@
     <asp:HyperLink ID="associations" runat="server" CssClass="main-links" 
         NavigateUrl="~/Admin_Association.aspx">Асоцијација</asp:HyperLink>
         <asp:HyperLink ID="lnkQuestions" runat="server" CssClass="main-links" 
-        NavigateUrl="~/Login.aspx">Прашања</asp:HyperLink>
+        NavigateUrl="~/Admin_Question.aspx">Прашања</asp:HyperLink>
         <div class="logedUser"> Вие сте најавен како <asp:Label ID="lblLogedUser" 
                 runat="server" Text="Label" Font-Bold="True"></asp:Label></div>
     <asp:LinkButton ID="logOutButton" runat="server" 
@@ -19,8 +19,9 @@
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainContent" Runat="Server">
     <div class="main-content">
     <div>
-        <asp:Label ID="lstBoxLabel" runat="server" Text="Кориснички имиња" Width="200px"></asp:Label>
-        <asp:ListBox ID="lstBoxUsers" runat="server" Height="96px" Width="93px" 
+        <asp:Label ID="lstBoxLabel" runat="server" Text="Кориснички имиња" 
+            Width="200px" CssClass="vertical"></asp:Label>
+        <asp:ListBox ID="lstBoxUsers" runat="server" Height="100px" Width="300px" 
             AutoPostBack="True" onselectedindexchanged="selectUserForEditing"></asp:ListBox>
     </div>
     <div style="margin-bottom: 15px">

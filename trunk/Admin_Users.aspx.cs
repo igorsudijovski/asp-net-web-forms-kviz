@@ -46,10 +46,16 @@ public partial class _Default : System.Web.UI.Page
         String username = lstBoxUsers.SelectedValue;
         btnAdd.Enabled = false;
         btnCancel.Enabled = true;
-        
+        chkAdmin.Enabled = true;
+
         if (username != ((String)Session["username"]) && username != "admin")
         {
             btnDelete.Enabled = true;
+        }
+        else
+        {
+            chkAdmin.Enabled = false;
+            btnDelete.Enabled = false;
         }
         btnSave.Enabled = true;
         SqlConnection connection = new SqlConnection();
@@ -177,6 +183,7 @@ public partial class _Default : System.Web.UI.Page
         password.Text = "";
         txtUsername.Enabled = true;
         lstBoxUsers.SelectedIndex = -1;
+        chkAdmin.Enabled = true;
     }
     protected void cancelClick(object sender, EventArgs e)
     {
@@ -186,6 +193,7 @@ public partial class _Default : System.Web.UI.Page
         btnSave.Enabled = false;
         txtUsername.Text = "";
         chkAdmin.Checked = false;
+        chkAdmin.Enabled = true;
         password.Text = "";
         txtUsername.Enabled = true;
         lstBoxUsers.SelectedIndex = -1;
