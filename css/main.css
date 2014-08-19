@@ -10,6 +10,12 @@
     margin-right:15px;
 }
 
+.vertical
+{
+    vertical-align: top;
+}
+
+
 .txt-a1 
 {
     margin-left: 10px;
