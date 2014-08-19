@@ -9,7 +9,7 @@
         NavigateUrl="~/Login.aspx">Најави се</asp:HyperLink>
 </asp:Content>
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainContent" Runat="Server">
-    <div class="margin-left">
+    <div class="main-content">
     <div>
         <asp:Label ID="error" runat="server" ForeColor="Red" Visible="False"></asp:Label>
     </div>
@@ -19,12 +19,12 @@
         <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" 
             ControlToValidate="username" CssClass="margin-right" 
             ErrorMessage="Може да содржи мали букви, големи букви, бројки и _" 
-            ForeColor="Red" ValidationExpression="^[0-9a-zA-Z_]*$"></asp:RegularExpressionValidator>
+            ForeColor="Red" ValidationExpression="^[0-9a-zA-Z_]*$" Display="Static"></asp:RegularExpressionValidator>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" 
             ControlToValidate="username" ErrorMessage="Минмална големина од 4 карактери" 
             ForeColor="Red" ValidationExpression=".{4,}" CssClass="margin-right"></asp:RegularExpressionValidator>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-            ControlToValidate="username" ForeColor="Red">Задолжително поле</asp:RequiredFieldValidator>
+            ControlToValidate="username" ForeColor="Red" Display="Static">Задолжително поле</asp:RequiredFieldValidator>
     </div>
     <div>
         <asp:Label ID="lblPassword" runat="server" Text="Лозинка" Width="200px"></asp:Label>
