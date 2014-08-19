@@ -54,6 +54,17 @@
     margin-right: 70px;
     float:right;
 }
+.txt-a5
+{
+    margin-left: 110px;
+    float:left;
+}
+
+.txt-b5
+{
+    margin-right: 110px;
+    float:right;
+}
 .txt-final 
 {
     margin: auto;
