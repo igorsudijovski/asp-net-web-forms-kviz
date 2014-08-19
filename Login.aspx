@@ -9,7 +9,7 @@
         NavigateUrl="~/Login.aspx">Најави се</asp:HyperLink>
 </asp:Content>
 <asp:Content ID="mainContent" ContentPlaceHolderID="mainContent" Runat="Server">
-    <div class="margin-left">
+    <div class="main-content">
     <div>
         <asp:Label ID="error" runat="server" ForeColor="Red" Visible="False"></asp:Label>
     </div>

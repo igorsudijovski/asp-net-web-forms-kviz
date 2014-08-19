@@ -46,7 +46,8 @@ public partial class _Default : System.Web.UI.Page
         String username = lstBoxUsers.SelectedValue;
         btnAdd.Enabled = false;
         btnCancel.Enabled = true;
-        if (username != "admin")
+        
+        if (username != ((String)Session["username"]) && username != "admin")
         {
             btnDelete.Enabled = true;
         }
@@ -91,7 +92,7 @@ public partial class _Default : System.Web.UI.Page
         connection.ConnectionString = connectionString;
         SqlCommand command = new SqlCommand();
         command.Connection = connection;
-        command.CommandText = "SELECT * FROM users WHERE username=@username";
+        command.CommandText = "SELECT username FROM users WHERE username=@username";
         command.Parameters.AddWithValue("@username", txtUsername.Text);
         try
         {
@@ -119,6 +120,10 @@ public partial class _Default : System.Web.UI.Page
                 command.Parameters.AddWithValue("@points", 0);
                 command.Parameters.AddWithValue("@time", 100.0);
                 command.ExecuteNonQuery();
+                txtUsername.Text = "";
+                chkAdmin.Checked = false;
+                password.Text = "";
+                loadUsers();
             }
         }
         catch (Exception ex)
@@ -129,10 +134,6 @@ public partial class _Default : System.Web.UI.Page
         {
             connection.Close();
         }
-        txtUsername.Text = "";
-        chkAdmin.Checked = false;
-        password.Text = "";
-        loadUsers();
     }
 
     protected void saveUserClick(object sender, EventArgs e)
@@ -249,5 +250,6 @@ public partial class _Default : System.Web.UI.Page
         password.Text = "";
         txtUsername.Enabled = true;
         lstBoxUsers.SelectedIndex = -1;
+        loadUsers();
     }
 }
