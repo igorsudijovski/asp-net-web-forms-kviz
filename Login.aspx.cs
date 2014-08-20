@@ -61,7 +61,7 @@ public partial class _Default : System.Web.UI.Page
                 }
                 else
                 {
-                    Response.Redirect("~/test");
+                    Response.Redirect("~/Pocetna.aspx");
                 }
             }
             else
