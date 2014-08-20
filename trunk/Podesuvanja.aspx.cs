@@ -69,4 +69,16 @@ public partial class _Default : System.Web.UI.Page
             connection.Close();
         }
     }
+    protected void logOut_click(object sender, EventArgs e)
+    {
+        Session.Remove("username");
+        Session.Remove("username_role");
+        HttpCookie keepMeLoginCookie = Request.Cookies["username"];
+        if (keepMeLoginCookie != null)
+        {
+            keepMeLoginCookie.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(keepMeLoginCookie);
+        }
+        Response.Redirect("~/Login.aspx");
+    }
 }
